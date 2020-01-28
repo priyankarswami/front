@@ -1,0 +1,34 @@
+
+<div class="table-responsive">
+    <table class="table table-hover table-stripeds">
+        <thead>
+            <tr>
+                <th>ApplicationForm Id</th>
+                <th>Student Name</th>
+                <th>Mobile</th>
+                <th>Email</th>
+                <th>PAN No</th>
+                <th>DOB</th>
+                <th>Address</th>
+                <th>Gender</th>
+                <th>Institute Name</th>
+                <th>LoanSchemes</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+              <tr *ngFor="let book of books">
+                  <td>{{book.id}}</td>
+                  <td>{{book.name}}</td>
+                  <td>{{book.author}}</td>
+                  <td>{{book.subject}}</td>
+                  <td>{{book.price}}</td>
+                  <td>{{book.isbn}}</td>
+                  <td>{{book.isbn}}</td>
+                  <td>{{book.isbn}}</td>
+                  <td>{{book.isbn}}</td>
+                  <td>{{book.isbn}}</td>
+              </tr>
+        </tbody>
+    </table>
+</div>

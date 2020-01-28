@@ -1,0 +1,100 @@
+<div class="container">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+          <a class="navbar-brand" href="#">Hello, Librarian</a>
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a routerLink="/editprofile">Edit Profile</a>
+            </li>
+            <li>
+              <a routerLink="/changepassword">Change Password</a>
+            </li>
+            <li>
+              <a routerLink="/bookavailability">Check Book Availability</a>
+            </li>
+            <li>
+              <a routerLink="/addnewbook">Add New Book</a>
+            </li>
+            <li>
+              <a routerLink="/newbookcopy">Add New Copy</a>
+            </li>
+            <li>
+              <a routerLink="#">Return Book</a>
+            </li>
+            <li>
+              <a routerLink="/issuebook">Issue Book</a>
+            </li>
+            <li>
+              <a routerLink="/issuebooklist">List of Issued Book</a>
+            </li>
+            <li>
+              <a routerLink="/addmember">Add New Member</a>
+            </li>
+            <li>
+              <a routerLink="/takefeepayment">Take Payment</a>
+            </li>
+            <li>
+              <a routerLink="/userpaymentlist">Payment History</a>
+            </li>
+            <li>
+              <a routerLink="/userlists">List of All User</a>
+            </li>
+      
+            <input type="text" value="" name="book" id="book" placeholder="Search Book by Name" />
+            <input type="submit" name="signin" class="btn" value="Search" id="btnsubmit" />
+          </ul>
+          <div style="float: right;"><a routerLink="logout">Logout</a></div>
+        </nav>
+
+        <div class="row">
+                <h3 style="float: left;">Issued Book List</h3>
+            </div>
+              <form>
+                <div class="row">
+                  <div class="form-group">
+                    <label>Enter User Id :</label>
+                    &nbsp;
+                    <input type="number" value="" name="id" id="id"  placeholder="Enter User Id" />
+                  </div>
+                </div>
+               
+                <div class="row">
+                  <input type="submit" name="showbooks" class="btn btn-success" value="Show Books" id="showbooks" />      
+                </div>
+    
+              </form>
+       
+      <div class="table-responsive">
+          <table class="table table-hover table-stripeds">
+              <thead>
+                  <tr>
+                      <th>Book Id</th>
+                      <th>Book Name</th>
+                      <th>Author</th>
+                      <th>Subject</th>
+                      <th>Price</th>
+                      <th>ISBN</th>
+                      <th>Copy Id</th>
+                      <th>Issue Id</th>
+                      <th>Issued On</th>
+                      <th>Return Date</th>
+                    </tr>
+              </thead>
+              <tbody>
+                    <tr *ngFor="let book of books">
+                        <td>{{book.id}}</td>
+                        <td>{{book.name}}</td>
+                        <td>{{book.author}}</td>
+                        <td>{{book.subject}}</td>
+                        <td>{{book.price}}</td>
+                        <td>{{book.isbn}}</td>
+                        <td>{{book.isbn}}</td>
+                        <td>{{book.isbn}}</td>
+                        <td>{{book.isbn}}</td>
+                        <td>{{book.isbn}}</td>
+                    </tr>
+              </tbody>
+          </table>
+      </div>
+ 
+  
+ 

@@ -1,0 +1,70 @@
+<div class="container">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+          <a class="navbar-brand" href="#">Hello, Librarian</a>
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a routerLink="/editprofile">Edit Profile</a>
+            </li>
+            <li>
+              <a routerLink="/changepassword">Change Password</a>
+            </li>
+            <li>
+              <a routerLink="/bookavailability">Check Book Availability</a>
+            </li>
+            <li>
+              <a routerLink="/addnewbook">Add New Book</a>
+            </li>
+            <li>
+              <a routerLink="/newbookcopy">Add New Copy</a>
+            </li>
+            <li>
+              <a routerLink="#">Return Book</a>
+            </li>
+            <li>
+              <a routerLink="/issuebook">Issue Book</a>
+            </li>
+            <li>
+              <a routerLink="/issuebooklist">List of Issued Book</a>
+            </li>
+            <li>
+              <a routerLink="/addmember">Add New Member</a>
+            </li>
+            <li>
+              <a routerLink="/takefeepayment">Take Payment</a>
+            </li>
+            <li>
+              <a routerLink="/userpaymentlist">Payment History</a>
+            </li>
+            <li>
+              <a routerLink="/userlists">List of All User</a>
+            </li>
+      
+            <input type="text" value="" name="book" id="book" placeholder="Search Book by Name" />
+            <input type="submit" name="signin" class="btn" value="Search" id="btnsubmit" />
+          </ul>
+          <div style="float: right;"><a routerLink="logout">Logout</a></div>
+        </nav>
+
+      <div class="table-responsive">
+          <table class="table table-hover table-stripeds">
+              <thead>
+                  <tr>
+                      <th>Id</th>
+                      <th>Book Name</th>
+                      <th>Author</th>
+                      <th></th>
+                    </tr>
+              </thead>
+              <tbody>
+                    <tr *ngFor="let book of books">
+                        <td>{{book.id}}</td>
+                        <td>{{book.name}}</td>
+                        <td>{{book.author}}</td>
+                        <td><a routerLink="/issuebook/{{book.id}}">Issue Book</a></td>
+                    </tr>
+              </tbody>
+          </table>
+      </div>
+ 
+  
+ 

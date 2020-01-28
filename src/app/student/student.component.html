@@ -1,0 +1,35 @@
+<div>
+        
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <ul class="nav navbar-nav">
+
+                <li class="active">
+                        <a href="/home">Home</a>
+                    </li>
+            <li class="active">
+                <a href="/student/apply">Apply For Loan</a>
+            </li>
+            <li>
+                <a href="/student/status">Application Status</a>
+            </li>
+    
+            <li>
+                <a href="/student/edit">Edit Profile</a>
+            </li>
+    
+            <li>
+                <a [routerLink]="['']">Logout</a> 
+                
+                <!-- <button class="btn btn-success" (click)=onLogout()> </button> -->
+    
+            
+                </li>
+    
+            
+        </ul>
+    </nav>
+    
+    </div>
+    
+    <hr>
+    <router-outlet></router-outlet>

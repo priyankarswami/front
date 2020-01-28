@@ -1,0 +1,71 @@
+
+
+
+<h2 style="text-align: center">Fill up the Education Loan Application Form</h2>
+
+<table style="align-content: center;">
+        
+</table>
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="">Name</label>
+      <input [(ngModel)]="name" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Email</label>
+      <input [(ngModel)]="email" type="email" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Phone</label>
+      <input [(ngModel)]="phone" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Gender</label>&nbsp; &nbsp;
+      <input  type="radio" name="gender" class="form" checked>:Male
+      <br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <input  type="radio" name="gender" class="Form">:Female
+    </div>
+    <div class="form-group">
+      <label for="">Birth Date</label>
+      <input [(ngModel)]="date" type="date" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="">Marital Status</label>&nbsp; &nbsp;
+        <input  type="radio" name="status" class="form" checked>:Married
+        <br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <input  type="radio" name="status" class="Form">:Unmarried    </div>
+    <div class="form-group">
+        <label for="">Fathers/Husbands Name</label>
+        <input [(ngModel)]="text" type="name" class="form-control" placeholder="Enter Father's or Husband's name">
+    </div>
+    <div class="form-group">
+        <label for="">Address</label>
+        <input [(ngModel)]="name" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="">PAN No/Aadhar No</label>
+        <input [(ngModel)]="number" type="no" class="form-control">
+    </div>
+    <div class="form-group">
+            <label for="">Admitted Course </label>
+            <input [(ngModel)]="name" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+            <label for="">Finance Details</label>
+            <input [(ngModel)]="name" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+            <label for="">Status</label>
+            <input [(ngModel)]="name" type="" class="form-control">
+    </div>
+    <div class="form-group">
+        <button (click)="onSignup()" class="btn btn-success">Update</button>
+        <button (click)="onCancel()" class="btn btn-danger" style="margin-left: 10px;">Cancel</button>
+    </div>
+  </div>
+</div>
+
+

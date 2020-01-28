@@ -1,0 +1,49 @@
+<h1>Add Bank Details</h1>
+
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+       
+        <!-- <div class="form-group">
+            <label for="">BankId</label>
+            <input [(ngModel)]="cDescription" type="textarea" class="form-control" placeholder="Enter text here">
+        </div> -->
+
+        <div class="form-group">
+            <label for="">Name</label>
+            <input [(ngModel)]="apps.name" name="name" type="textarea" class="form-control" placeholder="Enter text here">
+        </div>
+
+        <div class="form-group">
+            <label for="">Branch</label>
+            <input [(ngModel)]="apps.branch" name="branch" type="textarea" class="form-control" placeholder="Enter text here">
+        </div>
+
+        <div class="form-group">
+            <label for="">Email</label>
+            <input [(ngModel)]="apps.email" name="email" type="textarea" class="form-control" placeholder="Enter text here">
+        </div>
+
+        <div class="form-group">
+            <label for="">Password</label>
+            <input [(ngModel)]="apps.password" name="password" type="textarea" class="form-control" placeholder="Enter text here">
+        </div>
+
+        <div class="form-group">
+            <label for="">IFSC</label>
+            <input [(ngModel)]="apps.ifsc" name="ifsc" type="textarea" class="form-control" placeholder="Enter ifsc here">
+        </div>
+
+        <div class="form-group">
+            <label for="">Role</label>
+            <input [(ngModel)]="apps.role" name="role" type="textarea" class="form-control" placeholder="Enter text here">
+        </div>
+
+
+        <div class="form-group">
+            <button (click)="Insert()" class="btn btn-success">Add Bank Details</button>
+            <button (click)="onCancel()" class="btn btn-danger" style="margin-left: 10px;">Cancel</button>
+        </div>
+    </div>
+</div>
+
