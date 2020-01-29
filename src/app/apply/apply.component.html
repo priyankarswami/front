@@ -1,7 +1,7 @@
 
 
 
-<h2 style="text-align: center">Fill up the Education Loan Application Form</h2>
+<h2 style="text-align: center">Loan Application Form</h2>
 
 <table style="align-content: center;">
         
@@ -53,16 +53,26 @@
             <label for="">Admitted Course </label>
             <input [(ngModel)]="name" type="text" class="form-control">
     </div>
-    <div class="form-group">
+    <!-- <div class="form-group">
             <label for="">Finance Details</label>
             <input [(ngModel)]="name" type="text" class="form-control">
-    </div>
-    <div class="form-group">
+    </div> -->
+    <!-- <div class="form-group">
             <label for="">Status</label>
             <input [(ngModel)]="name" type="" class="form-control">
-    </div>
+    </div> -->
+
     <div class="form-group">
-        <button (click)="onSignup()" class="btn btn-success">Update</button>
+      <label for="">Select loanschemes</label>
+      &nbsp;
+                    <select id="bank" [(ngModel)]="bank.loanscheme" name="role">
+                    <option value="Male">BANK</option>
+                    <option value="Female"></option>
+                    </select>
+    </div>
+    
+    <div class="form-group">
+        <button (click)="onSignup()" class="btn btn-success">SUBMIT</button>
         <button (click)="onCancel()" class="btn btn-danger" style="margin-left: 10px;">Cancel</button>
     </div>
   </div>

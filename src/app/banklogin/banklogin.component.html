@@ -1,0 +1,64 @@
+<div  class="container-fluid" style="background-image: url('/assets/loan7.jpg');background-size: cover; padding-bottom: 150px;">
+    <!-- <h2 style="color:cornsilk;text-align:center;;" >Online Education Loan Management System</h2> -->
+    <div>
+       
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a routerLink="/home">Home</a>
+                </li>
+                <li>
+                    <a routerLink="/about">About Us</a>
+                </li>
+        
+                <li>
+                    <a routerLink="/link">Useful Links</a>
+                </li>
+        
+                <li>
+                    <a routerLink="/contact">Contact Us</a>
+                </li>
+        
+        
+                <li  >
+                    <a routerLink="/signin">Login</a>
+                </li>
+    
+            </ul>
+        </nav>
+        
+        </div>
+   
+   
+    <div style="width:400px;  float:right;margin-top: 0pc;background-color: gray;" >
+        <form #myloginform="ngForm" (ngSubmit)="SignIn(myloginform)">
+            <h1 style="text-align: center;">Login</h1>
+            <span class="label " style="color: red;">{{message}}</span>
+
+            <div class="form-group" style="margin-left: 50px;">
+                <label for="Name">Email Id</label>
+                <input type="text" class="form-control" id="uname" name="uname" style="width: 300px;" placeholder="Enter email" [(ngModel)]="email">
+            </div>
+        
+            <div class="form-group" style="margin-left: 50px">
+                    <label for="Password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" style="width: 300px;" placeholder="Enter password" [(ngModel)]="password">
+                </div>
+
+                <div class="form-group" style="margin-left: 50px;">
+                    <label for="role">Role</label>
+                    &nbsp;
+                    <select id="role" [(ngModel)]="bank.role" name="role">
+                    <option value="Male">BANK</option>
+                    <option value="Female">ADMIN</option>
+                    </select>
+                    </div>
+        
+        <br>
+             <button type="submit" class="btn btn-primary"style="margin-left: 50px">Login</button>
+        
+        
+        </form>
+        <br>
+        </div>
+    </div>

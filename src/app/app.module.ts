@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignInComponent } from './sign-in/sign-in.component';
-// import { SignUpComponent } from './sign-up/sign-up.component';
 import { RouterModule} from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthService } from './auth.service';
@@ -27,12 +26,12 @@ import { EditschemeComponent } from './editscheme/editscheme.component';
 import { InstructionsComponent } from './instructions/instructions.component';
 import { BanklistComponent } from './banklist/banklist.component';
 import { SignupComponent } from './signup/signup.component';
+import { BankloginComponent } from './banklogin/banklogin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignInComponent,
-    // SignUpComponent,
     HomeComponent,
     AboutComponent,
     LinkComponent,
@@ -51,6 +50,7 @@ import { SignupComponent } from './signup/signup.component';
     InstructionsComponent,
     BanklistComponent,
     SignupComponent,
+    BankloginComponent,
   
     
   ],
@@ -61,8 +61,11 @@ import { SignupComponent } from './signup/signup.component';
     FormsModule,
     RouterModule.forRoot([
       {path: "", component : HomeComponent},
-      // {path: "signup", component : SignUpComponent},
       {path: "signin", component : SignInComponent},
+    //   {path: "signin", component : SignInComponent,children:[{path: "banklogin", component :BankloginComponent},
+    // ]},
+    {path: "banklogin", component : BankloginComponent},
+
       {path: "signup", component : SignupComponent},
       {path: "about", component : AboutComponent},
       {path: "student", component : StudentComponent},
@@ -71,8 +74,6 @@ import { SignupComponent } from './signup/signup.component';
     {path: "student", component : StudentComponent,children:[{path: "edit", component :EditComponent}]},
     {path: "student", component : StudentComponent,children:[{path: "status", component :StatusComponent},
     ]},
-    // {path: "student", component : StudentComponent,children:[{path: "signup", component :SignUpComponent},
-    // ]},
 
       {path: "bank", component : BankComponent},
       {path: "bank", component : BankComponent,children:[{path: "applications", component :ApplicationsComponent}

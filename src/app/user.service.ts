@@ -23,6 +23,18 @@ Login(uname,password)
   }
   return this.helper.post("http://localhost:8087/LoanMangtSystem/students/login",data);
 }
+
+Login1(email,password,role)
+{
+  console.log("select called");
+  let data = {
+    "email":email,
+    "password":password,
+    "role":role
+  }
+  return this.helper.post("http://localhost:8087/LoanMangtSystem/banks",data);
+}
+
 RegisterStudent(data){
   return this.helper.post("http://localhost:8087/LoanMangtSystem/students/",data);
 }

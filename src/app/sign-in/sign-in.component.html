@@ -58,7 +58,6 @@
 
 
 <div  class="container-fluid" style="background-image: url('/assets/loan5.jpg');background-size: cover; padding-bottom: 150px;">
-    <!-- <h2 style="color:cornsilk;text-align:center;;" >Online Education Loan Management System</h2> -->
     <div>
        
         <nav class="navbar navbar-default navbar-static-top" role="navigation">
@@ -76,11 +75,6 @@
         
                 <li>
                     <a routerLink="/contact">Contact Us</a>
-                </li>
-        
-        
-                <li  >
-                    <a routerLink="/signin">Login</a>
                 </li>
         
                 <li>
@@ -110,6 +104,11 @@
         
         <br>
              <button type="submit" class="btn btn-primary"style="margin-left: 50px">Login</button>
+        
+             <li>
+                    <a [routerLink]="['/banklogin']">Bank Login</a>         
+                
+            </li>
         
         </form>
         <br>
